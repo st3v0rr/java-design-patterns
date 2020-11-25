@@ -32,7 +32,7 @@ public class SimpleFacade {
 
   public int divide(int number1, int number2) {
     if (number2 == 0) {
-      throw new IllegalArgumentException("divisior may not be 0");
+      throw new IllegalArgumentException("divisor may not be 0");
     }
     return calculationSystem.calculate(number1, number2, 4);
   }
