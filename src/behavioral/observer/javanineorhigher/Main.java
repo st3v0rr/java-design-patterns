@@ -12,7 +12,7 @@ public class Main {
 
     //StringPublisher needs to implement Publisher and holds the Subscriptions
     //Subscribers need to implement Subscriber
-    //StringSubscribtion holds the Subscribers
+    //StringSubscription holds the Subscribers
     //Subscribers need to be registered in the publisher
 
     StringPublisher publisher = new StringPublisher();

@@ -1,5 +1,6 @@
 package behavioral.command;
 
+import behavioral.command.commandmodel.Command;
 import behavioral.command.commandmodel.TransformStringCommand;
 import behavioral.command.receivermodel.LowercaseReceiver;
 import behavioral.command.receivermodel.Receiver;
@@ -15,7 +16,7 @@ public class Main {
     //The command knows it's receivers
     //Receivers perform actions triggered by a command
     List<Receiver> receivers = Arrays.asList(new LowercaseReceiver(), new UppercaseReceiver());
-    TransformStringCommand command = new TransformStringCommand(receivers);
+    Command command = new TransformStringCommand(receivers);
 
     command.transform("Hello");
     command.transform("World");
